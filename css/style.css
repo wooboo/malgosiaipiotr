@@ -10,9 +10,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 @font-face {
     font-family: 'Rouge Script';
-    src: url('../fonts/RougeScript-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/RougeScript-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/RougeScript-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    src: url(../fonts/RougeScript-Regular.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../fonts/RougeScript-Regular.woff) format('woff'), /* Pretty Modern Browsers */
+       url(../fonts/RougeScript-Regular.ttf)  format('truetype'), /* Safari, Android, iOS */
        ;
 }
 /*------------------------------------------------------------------
