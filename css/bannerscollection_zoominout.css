@@ -219,35 +219,35 @@ skins available:
 	left:0px;
 	width:70px;
 	height:70px;
-	background:url(skins/majestic/leftNavOFF.html) 0 0 no-repeat;
+	background:url(skins/majestic/leftNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 .bannerscollection_zoominout.majestic .leftNav:hover {
-	background:url(skins/majestic/leftNavON.html) 0 0 no-repeat;
+	background:url(skins/majestic/leftNavON.png) 0 0 no-repeat;
 }
 .bannerscollection_zoominout.majestic .rightNav {
 	position:absolute;
 	right:0px;
 	width:70px;
 	height:70px;
-	background:url(skins/majestic/rightNavOFF.html) 0 0 no-repeat;
+	background:url(skins/majestic/rightNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 .bannerscollection_zoominout.majestic .rightNav:hover {
-	background:url(skins/majestic/rightNavON.html) 0 0 no-repeat;
+	background:url(skins/majestic/rightNavON.png) 0 0 no-repeat;
 }
 
 .bannerscollection_zoominout.majestic .playOver {
 	position:absolute;
 	width:73px;
 	height:73px;
-	background:url(skins/majestic/play_overOFF.html) 0 0 no-repeat;
+	background:url(skins/majestic/play_overOFF.png) 0 0 no-repeat;
 	display:none;
 	z-index:4;
 	cursor: pointer;
 }
 .bannerscollection_zoominout.majestic .playOver:hover {
-	background:url(skins/majestic/play_overON.html) 0 0 no-repeat;
+	background:url(skins/majestic/play_overON.png) 0 0 no-repeat;
 	display:none;
 	z-index:4;
 	cursor: pointer;
@@ -285,7 +285,7 @@ skins available:
 }
 
 .bannerscollection_zoominout.majestic .thumbsHolder_ThumbON {
-	background:url(skins/majestic/thumbActiveArrow.html) center 0px no-repeat;
+	background:url(skins/majestic/thumbActiveArrow.png) center 0px no-repeat;
 }
 
 .bannerscollection_zoominout.majestic .thumbsHolder_ThumbON img {
@@ -297,40 +297,40 @@ skins available:
 	position:absolute;
 	width:16px;
 	height:135px;
-	background:url(skins/majestic/carouselLeftNavOFF.html) 0 0 no-repeat;
+	background:url(skins/majestic/carouselLeftNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .bannerscollection_zoominout.majestic .carouselLeftNav:hover {
-	background:url(skins/majestic/carouselLeftNavON.html) 0 0 no-repeat;
+	background:url(skins/majestic/carouselLeftNavON.png) 0 0 no-repeat;
 }
 
 .bannerscollection_zoominout.majestic .carouselLeftNavDisabled {
-	background:url(skins/majestic/carouselLeftNavDisable.html) 0 0 no-repeat;
+	background:url(skins/majestic/carouselLeftNavDisable.png) 0 0 no-repeat;
 	cursor:default;
 }
 .bannerscollection_zoominout.majestic .carouselLeftNavDisabled:hover {
-	background:url(skins/majestic/carouselLeftNavDisable.html) 0 0 no-repeat;
+	background:url(skins/majestic/carouselLeftNavDisable.png) 0 0 no-repeat;
 }
 
 .bannerscollection_zoominout.majestic .carouselRightNav {
 	position:absolute;
 	width:16px;
 	height:135px;
-	background:url(skins/majestic/carouselRightNavOFF.html) 0 0 no-repeat;
+	background:url(skins/majestic/carouselRightNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .bannerscollection_zoominout.majestic .carouselRightNav:hover {
-	background:url(skins/majestic/carouselRightNavON.html) 0 0 no-repeat;
+	background:url(skins/majestic/carouselRightNavON.png) 0 0 no-repeat;
 }
 
 .bannerscollection_zoominout.majestic .carouselRightNavDisabled {
-	background:url(skins/majestic/carouselRightNavDisable.html) 0 0 no-repeat;
+	background:url(skins/majestic/carouselRightNavDisable.png) 0 0 no-repeat;
 	cursor:default;
 }
 .bannerscollection_zoominout.majestic .carouselRightNavDisabled:hover {
-	background:url(skins/majestic/carouselRightNavDisable.html) 0 0 no-repeat;
+	background:url(skins/majestic/carouselRightNavDisable.png) 0 0 no-repeat;
 }
 
 
@@ -352,11 +352,11 @@ skins available:
 	margin-top:-16px;
 	width:60px;
 	height:110px;
-	background:url(skins/generous/leftNavOFF.html) 0 0 no-repeat;
+	background:url(skins/generous/leftNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 .bannerscollection_zoominout.generous .leftNav:hover {
-	background:url(skins/generous/leftNavON.html) 0 0 no-repeat;
+	background:url(skins/generous/leftNavON.png) 0 0 no-repeat;
 }
 .bannerscollection_zoominout.generous .rightNav {
 	position:absolute;
@@ -364,25 +364,25 @@ skins available:
 	margin-top:-16px;
 	width:60px;
 	height:110px;
-	background:url(skins/generous/rightNavOFF.html) 0 0 no-repeat;
+	background:url(skins/generous/rightNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 .bannerscollection_zoominout.generous .rightNav:hover {
-	background:url(skins/generous/rightNavON.html) 0 0 no-repeat;
+	background:url(skins/generous/rightNavON.png) 0 0 no-repeat;
 }
 
 .bannerscollection_zoominout.generous .playOver {
 	position:absolute;
 	width:73px;
 	height:73px;
-	background:url(skins/generous/play_overOFF.html) 0 0 no-repeat;
+	background:url(skins/generous/play_overOFF.png) 0 0 no-repeat;
 	display:none;
 	z-index:4;
 	cursor: pointer;
 }
 
 .bannerscollection_zoominout.generous .playOver:hover {
-	background:url(skins/generous/play_overON.html) 0 0 no-repeat;
+	background:url(skins/generous/play_overON.png) 0 0 no-repeat;
 	display:none;
 	z-index:4;
 	cursor: pointer;
@@ -393,7 +393,7 @@ skins available:
 /* thumbs */
 .bannerscollection_zoominout.generous .thumbsHolderWrapper {
 	position:absolute;
-	background:url(skins/generous/thumbsBg.html) repeat-x;
+	background:url(skins/generous/thumbsBg.png) repeat-x;
 	height:110px;
 	width:100%;
 	z-index:2;
@@ -425,7 +425,7 @@ skins available:
 }
 
 .bannerscollection_zoominout.generous .thumbsHolder_ThumbON {
-	background:url(skins/generous/thumbActiveArrow.html) center 0px no-repeat;	
+	background:url(skins/generous/thumbActiveArrow.png) center 0px no-repeat;	
 }
 
 .bannerscollection_zoominout.generous .thumbsHolder_ThumbON a img, .thumbsHolder_ThumbON a  { border: none; overflow: hidden; float: left; }
@@ -436,40 +436,40 @@ skins available:
 	position:absolute;
 	width:44px;
 	height:110px;
-	background:url(skins/generous/carouselLeftNavOFF.html) 0 0 no-repeat;
+	background:url(skins/generous/carouselLeftNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .bannerscollection_zoominout.generous .carouselLeftNav:hover {
-	background:url(skins/generous/carouselLeftNavON.html) 0 0 no-repeat;
+	background:url(skins/generous/carouselLeftNavON.png) 0 0 no-repeat;
 }
 
 .bannerscollection_zoominout.generous .carouselLeftNavDisabled {
-	background:url(skins/generous/carouselLeftNavDisable.html) 0 0 no-repeat;
+	background:url(skins/generous/carouselLeftNavDisable.png) 0 0 no-repeat;
 	cursor:default;
 }
 .bannerscollection_zoominout.generous .carouselLeftNavDisabled:hover {
-	background:url(skins/generous/carouselLeftNavDisable.html) 0 0 no-repeat;
+	background:url(skins/generous/carouselLeftNavDisable.png) 0 0 no-repeat;
 }
 
 .bannerscollection_zoominout.generous .carouselRightNav {
 	position:absolute;
 	width:44px;
 	height:110px;
-	background:url(skins/generous/carouselRightNavOFF.html) 0 0 no-repeat;
+	background:url(skins/generous/carouselRightNavOFF.png) 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .bannerscollection_zoominout.generous .carouselRightNav:hover {
-	background:url(skins/generous/carouselRightNavON.html) 0 0 no-repeat;
+	background:url(skins/generous/carouselRightNavON.png) 0 0 no-repeat;
 }
 
 .bannerscollection_zoominout.generous .carouselRightNavDisabled {
-	background:url(skins/generous/carouselRightNavDisable.html) 0 0 no-repeat;
+	background:url(skins/generous/carouselRightNavDisable.png) 0 0 no-repeat;
 	cursor:default;
 }
 .bannerscollection_zoominout.generous .carouselRightNavDisabled:hover {
-	background:url(skins/generous/carouselRightNavDisable.html) 0 0 no-repeat;
+	background:url(skins/generous/carouselRightNavDisable.png) 0 0 no-repeat;
 }
 
 
@@ -636,7 +636,7 @@ skins available:
 
 .textElement11_opportuneFullWidth {
 	padding: 4px 10px 4px 10px;
-	background:url(images/textsBg/textBg_transparency.html);
+	background:url(images/textsBg/textBg_transparency.png);
 	font:48px 'Lato', sans-serif;
 	line-height:60px;
 	color:#FFFFFF;
@@ -740,7 +740,7 @@ skins available:
 
 
 .textElement61_opportuneFullWidth {
-	background:url(images/textsBg/textBg_transparency40.html);
+	background:url(images/textsBg/textBg_transparency40.png);
 	font: 52px 'Droid Sans', Verdana, Helvetica, sans-serif;
 	line-height:60px;
 	padding:3px 6px 3px 6px;
@@ -975,7 +975,7 @@ skins available:
 .textElement50_majestic {
 	width:27%;
 	height: 420px;
-	background: url(images/textsBg/textBg_transparency70.html);
+	background: url(images/textsBg/textBg_transparency70.png);
 	text-align:left;
 }
 
@@ -1088,7 +1088,7 @@ skins available:
 .textElement50FW_majestic {
 	width:27%;
 	height: 620px;
-	background: url(images/textsBg/textBg_transparency70.html);
+	background: url(images/textsBg/textBg_transparency70.png);
 	text-align:left;
 }
 
@@ -1169,7 +1169,7 @@ skins available:
 .textElement70FW_majestic {
 	width:100%;
 	height: 120px;
-	background: url(images/textsBg/textBg_transparency70.html);
+	background: url(images/textsBg/textBg_transparency70.png);
 }
 
 .textElement71FW_majestic {
@@ -1828,7 +1828,7 @@ skins available:
 .textElement10_728x90 {
 	width:30%;
 	height: 260px;
-	background: url(images/textsBg/textBg_transparency70.html);
+	background: url(images/textsBg/textBg_transparency70.png);
 }
 
 
@@ -2136,7 +2136,7 @@ skins available:
 
 .textElement21_FixedDimensions {
 	padding: 1px 2px 2px 2px;
-	background:url(images/textsBg/textBg_transparency.html);
+	background:url(images/textsBg/textBg_transparency.png);
 	font:26px 'PT Sans', sans-serif;
 	line-height:26px;
 	color:#FFFFFF;
@@ -2145,7 +2145,7 @@ skins available:
 
 .textElement22_FixedDimensions {
 	padding: 1px 2px 2px 2px;
-	background:url(images/textsBg/textBg_transparency.html);
+	background:url(images/textsBg/textBg_transparency.png);
 	font:26px 'PT Sans', sans-serif;
 	line-height:26px;
 	color:#FFFFFF;
@@ -2268,7 +2268,7 @@ skins available:
 
 .textElement21_FullWidth {
 	padding: 1px 2px 2px 2px;
-	background:url(images/textsBg/textBg_transparency.html);
+	background:url(images/textsBg/textBg_transparency.png);
 	font:42px 'PT Sans', sans-serif;
 	line-height:42px;
 	color:#FFFFFF;
@@ -2277,7 +2277,7 @@ skins available:
 
 .textElement22_FullWidth {
 	padding: 1px 2px 2px 2px;
-	background:url(images/textsBg/textBg_transparency.html);
+	background:url(images/textsBg/textBg_transparency.png);
 	font:42px 'PT Sans', sans-serif;
 	line-height:42px;
 	color:#FFFFFF;
