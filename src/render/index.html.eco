@@ -1,0 +1,8 @@
+---
+title: "Wielki Dzień Małgosi i Piotra"
+layout: "home"
+isPage: true
+---
+<% for page in @getCollection("homeSections").toJSON(): %>
+    <%- page.contentRenderedWithoutLayouts %>
+<% end %>
