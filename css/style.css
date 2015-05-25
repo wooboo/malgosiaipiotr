@@ -10,12 +10,12 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 @font-face {
   font-family: 'Rouge Script';
-  src: url('RougeScript-Regular.eot');
-  src: url('RougeScript-Regular.eot?#iefix') format('embedded-opentype'),
-       url('RougeScript-Regular.woff2') format('woff2'),
-       url('RougeScript-Regular.woff') format('woff'),
-       url('RougeScript-Regular.ttf') format('truetype'),
-       url('RougeScript-Regular.svg#RougeScript-Regular') format('svg');
+  src: url('../fonts/RougeScript-Regular.eot');
+  src: url('../fonts/RougeScript-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/RougeScript-Regular.woff2') format('woff2'),
+       url('../fonts/RougeScript-Regular.woff') format('woff'),
+       url('../fonts/RougeScript-Regular.ttf') format('truetype'),
+       url('../fonts/RougeScript-Regular.svg#RougeScript-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
