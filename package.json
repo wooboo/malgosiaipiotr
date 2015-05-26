@@ -6,6 +6,7 @@
     "docpad": "~6.78.1",
     "docpad-plugin-coffeescript": "~2.5.0",
     "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-less": "~2.4.1",
     "docpad-plugin-livereload": "~2.6.1"
   },
