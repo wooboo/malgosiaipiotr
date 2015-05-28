@@ -1,0 +1,211 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for	for (…) {…}"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 588.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 600.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Projects/malgosiaipiotr",
+		"/C/Projects/malgosiaipiotr/src",
+		"/C/Projects/malgosiaipiotr/src/static",
+		"/C/Projects/malgosiaipiotr/src/static/js"
+	],
+	"file_history":
+	[
+		"/C/Projects/malgosiaipiotr/malgosiaipiotr.sublime-project",
+		"/C/Projects/malgosiaipiotr/out/js/countdown.js",
+		"/C/Projects/malgosiaipiotr/src/static/js/settings.js",
+		"/C/Projects/malgosiaipiotr/src/render/sections/countdown.html",
+		"/C/Projects/malgosiaipiotr/src/static/js/countdown_plugins.js",
+		"/C/Projects/malgosiaipiotr/src/static/js/countdown.js",
+		"/C/Users/woobo/Downloads/WeddingPage/css/style.css",
+		"/C/Users/woobo/Downloads/.watcher/Selector.default/Script.pdf.json",
+		"/C/Projects/game-helper/app/scripts/controllers/main.js",
+		"/C/Projects/game-helper/app/views/main.html",
+		"/C/Users/woobo/Downloads/.watcher/Buttons.default.json",
+		"/C/Users/woobo/Downloads/.watcher/Selector/DeleteFilePlugin.default.json",
+		"/C/Users/woobo/Downloads/.watcher/Selector.default.json",
+		"/C/Users/woobo/Downloads/.watcher/Buttons/Delete.default.json",
+		"/C/Users/woobo/Downloads/.watcher/DeleteFilePlugin",
+		"/C/Projects/game-helper/app/scripts/directives/ngenter.js"
+	],
+	"find":
+	{
+		"height": 50.0
+	},
+	"find_in_files":
+	{
+		"height": 138.0,
+		"where_history":
+		[
+			"*.js",
+			"",
+			"-\\node_modules",
+			"-/node_modules/**",
+			"-node_modules",
+			"*.js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"31",
+			"countdown_clock",
+			"url",
+			"url		",
+			"url",
+			"font-fam",
+			"font",
+			"total",
+			"results"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "malgosiaipiotr.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 367.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

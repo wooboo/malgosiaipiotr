@@ -8,7 +8,9 @@
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-less": "~2.4.1",
-    "docpad-plugin-livereload": "~2.6.1"
+    "docpad-plugin-livereload": "~2.6.1",
+    "docpad-plugin-partials": "~2.9.2",
+    "moment": "^2.10.3"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
