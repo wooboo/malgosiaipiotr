@@ -216,7 +216,7 @@ Version : 1.21
 			// new Date(2014, 2, 15, 18) will count until the 15th of March 2014 at 6 PM.
 			// new Date(2013, 6, 3, 8) will count until the 3rd of July 2013 at 8 AM.
 
-			until: new Date(2016, 04, 26, 15, 00), 
+			until: new Date(2016, 04, 26, 16, 00), 
 			timezone: 1,
 			format: 'DHMS',
 			layout: 

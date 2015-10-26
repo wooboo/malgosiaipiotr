@@ -6,7 +6,7 @@
 					<div class="flipper">
 						<img src="images/ceremony.jpg" alt="" />
 						<div class="front">
-							<button class="btn btn-default">View The Map</button>
+							<button class="btn btn-default">Pokaż mapę</button>
 						</div>
 						<div class="back">
 
@@ -38,14 +38,14 @@
 									// as well as the name to be displayed on the map type control.
 									
 									var styledMap = new google.maps.StyledMapType(styles, {
-										name: "Styled Map"
+										name: "Stylowa mapa"
 									});
 
 									//-----------------------------------------------------------------------
 									// Set up map pin position
 									
-									var latlng = new google.maps.LatLng(37.792726, -122.405575);
-									var latlng2 = new google.maps.LatLng(37.735661, -122.502455);
+									var latlng = new google.maps.LatLng(52.236374, 20.938682);
+									var latlng2 = new google.maps.LatLng(52.254092, 20.873174);
 
 									//-----------------------------------------------------------------------
 									// Set up map options
@@ -107,11 +107,11 @@
 										map: map,
 										icon: image,
 										clickable: true,
-										title:"Old Saint Mary's Church"
+										title:"Parafia Rzymskokatolicka p.w. Dobrego Pasterza"
 									});
 
 									myMarker.info = new google.maps.InfoWindow({
-										content: "<b>Old Saint Mary's Church</b><br>660 California<br>San Francisco, CA 94108"
+										content: "<b>Parafia Rzymskokatolicka p.w. Dobrego Pasterza</b><br>Karola Szczecińskiego 5<br>01-113 Warszawa"
 									});
 
 									google.maps.event.addListener(myMarker, 'click', function() {
@@ -126,11 +126,11 @@
 										map: map2,
 										icon: image,
 										clickable: true,
-										title:"Days Inn San Francisco At The Beach"
+										title:"Krasnodwór"
 									});
 
 									myMarker2.info = new google.maps.InfoWindow({
-										content: "<b>Days Inn San Francisco At The Beach</b><br>2600 Sloat Blvd<br>San Francisco, CA 94116"
+										content: "<b>Krasnodwór</b><br>Antoniego Kocjana 70<br>01-473 Warszawa"
 									});
 
 									google.maps.event.addListener(myMarker2, 'click', function() {
@@ -143,29 +143,29 @@
 
 							<div id="map-canvas" class="map-canvas"></div>
 
-							<p><button class="btn btn-primary">Hide The Map</button></p>
+							<p><button class="btn btn-primary">Ukryj mapę</button></p>
 						</div>
 					</div>
 					<div class="padding">
-						<h4>Wedding Ceremony</h4>
-						<h5>Old Saint Mary's Church at 11:00 am</h5>
+						<h4>Ceremonia zaślubin</h4>
+						<h5>Parafia Rzymskokatolicka p.w. Dobrego Pasterza godzina 16:00</h5>
 						<p>Duis posuere auctor erat nec lobortis. Morbi cursus efficitur felis quis placerat. Duis pellentesque fermentum ex sed auctor. In id enim imperdiet, mollis ante a, fringilla ligula. Pellentesque vel ipsum et nulla scelerisque eleifend nec id dui.</p>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="padding">
-						<h4>Wedding Party</h4>
-						<h5>Days Inn at 3:00 pm</h5>
+						<h4>Przyjęcie weselne</h4>
+						<h5>Krasnodwór godzina 18:00</h5>
 						<p>Duis posuere auctor erat nec lobortis. Morbi cursus efficitur felis quis placerat. Duis pellentesque fermentum ex sed auctor. In id enim imperdiet, mollis ante a, fringilla ligula. Pellentesque vel ipsum et nulla scelerisque eleifend nec id dui.</p>
 					</div>
 					<div class="flipper">
 						<img src="images/party.jpg" alt="" />
 						<div class="front">
-							<button class="btn btn-default">View The Map</button>
+							<button class="btn btn-default">Pokaż mapę</button>
 						</div>
 						<div class="back">
 							<div id="map-canvas2" class="map-canvas"></div>
-							<p><button class="btn btn-primary">Hide The Map</button></p>
+							<p><button class="btn btn-primary">Ukryj mapę</button></p>
 						</div>
 					</div>
 				</div>

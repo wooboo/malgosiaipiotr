@@ -12,7 +12,7 @@ docpadConfig = {
         pages: ->
             @getCollection("html").findAllLive({isPage:true})
         homeSections: ->
-            @getCollection("html").findAllLive({relativeOutDirPath: 'sections'},[{order:1}])
+            @getCollection("html").findAllLive({relativeOutDirPath: 'sections', isPublished: true},[{order:1}])
         blogposts: ->
             @getCollection("html").findAllLive({relativeOutDirPath: 'posts'},[{date:1}]).on "add", setDates
     

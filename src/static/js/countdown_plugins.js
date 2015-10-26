@@ -1871,7 +1871,10 @@
                 c._updateTargets();
                 s = o
             }
-            i(r)
+            setTimeout(function () {
+                i(r)     
+            }, 1000);
+          
         }
         this.regional = [];
         this.regional[""] = {
