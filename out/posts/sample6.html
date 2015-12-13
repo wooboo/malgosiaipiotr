@@ -2,12 +2,61 @@
 <head>
 	<title></title>
     <meta name="generator" content="DocPad v6.78.1" />
-    
+    <style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style>
 </head>
 <body>
     <h1>Our first date</h1>
     <h4>Header and another paragraph below</h4>
 <p>Nam id nibh hendrerit, varius sem sit amet, malesuada felis. Integer sed sem quis purus vestibulum ornare eu dictum lacus. Aliquam sollicitudin viverra posuere. Cras sit amet ligula sit amet metus maximus tempor et ac sem. Curabitur ultricies tempor erat, ac varius enim maximus non. Integer porta quis lorem at convallis. Integer sed rutrum lacus. Quisque ac lobortis lorem, non porta diam. Nulla placerat, ligula eget laoreet varius, justo risus ornare tortor, ut sagittis odio elit a risus. Curabitur finibus tellus dapibus velit tempus luctus. Vestibulum porttitor interdum purus eget porta. Nullam ac orci ut nulla ullamcorper gravida. Donec in pellentesque metus. Ut metus enim, condimentum eget mollis quis, iaculis sit amet massa.</p>
-    
+    <script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
 </body>
 </html>
