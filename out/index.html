@@ -19,7 +19,11 @@
 		<script src="js/respond.min.js"></script>
 		<![endif]-->
 
-    
+    <style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style>
 </head>
 	<body id="home" data-spy="scroll" data-target=".menu">
     
@@ -574,23 +578,6 @@
 							
 								<div>
 								<div class="img-hover">
-									<a href="/posts/sample3.html">
-										<div class="img">
-											<img src="images/blog1.jpg" class="img-responsive" alt="" />
-										</div>
-										<div class="info">
-											<i class="fa fa-venus-mars fa-3x"></i>
-										</div>
-									</a>
-								</div>
-								<h5>Our first date</h5>
-								<h6>13 grudnia 2015 by Piotr Żabówka</h6>
-								<p>Nam id nibh hendrerit, varius sem sit amet, malesuada felis.</p>
-								<p><a href="/posts/sample3.html" class="btn btn-default btn-sm">Read more</a></p>
-								</div>
-							
-								<div>
-								<div class="img-hover">
 									<a href="/posts/sample2.html">
 										<div class="img">
 											<img src="images/blog1.jpg" class="img-responsive" alt="" />
@@ -621,6 +608,23 @@
 								<h6>13 grudnia 2015 by Piotr Żabówka</h6>
 								<p>Nam id nibh hendrerit, varius sem sit amet, malesuada felis.</p>
 								<p><a href="/posts/sample4.html" class="btn btn-default btn-sm">Read more</a></p>
+								</div>
+							
+								<div>
+								<div class="img-hover">
+									<a href="/posts/sample3.html">
+										<div class="img">
+											<img src="images/blog1.jpg" class="img-responsive" alt="" />
+										</div>
+										<div class="info">
+											<i class="fa fa-venus-mars fa-3x"></i>
+										</div>
+									</a>
+								</div>
+								<h5>Our first date</h5>
+								<h6>13 grudnia 2015 by Piotr Żabówka</h6>
+								<p>Nam id nibh hendrerit, varius sem sit amet, malesuada felis.</p>
+								<p><a href="/posts/sample3.html" class="btn btn-default btn-sm">Read more</a></p>
 								</div>
 							
 								<div>
@@ -892,6 +896,51 @@
 	<script src="js/settings.js"></script>
 
 
-    
+    <script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
 </body>
 </html>
