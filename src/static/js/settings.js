@@ -3,6 +3,31 @@
 
 	$(document).ready(function() {
 
+        // ====================================================================
+        // Firebase connection
+
+        var template = $('#guestbook-template').html();
+        Mustache.parse(template);   // optional, speeds up future uses
+        
+        var myFirebaseRef = new Firebase("https://glaring-fire-7409.firebaseio.com/guestbook");
+            myFirebaseRef.once("value", function(snap) {
+                $('#guestbook-carousel').empty();
+                var items = snap.val();
+                for (var key in items) {
+                    if (items.hasOwnProperty(key)) {
+                        var element = items[key];
+                        $('#guestbook-carousel').append(Mustache.render(template, element));
+                    }
+                }
+                initGuestbookCarousel();
+            });
+        $('#guestbook-form').submit(function(e){
+            e.preventDefault();
+            var data = $('#guestbook-form').serializeObject();
+            myFirebaseRef.push(data);
+            window.location.reload();
+        });
+        
 		// ====================================================================
 
 		// Header scroll function
@@ -164,11 +189,13 @@
 		});
 
 		$("#registry .owl-carousel").owlCarousel({
-			items: 6,
+			items: 3,
 			margin: 60,
 			loop: true,
 			dots: true,
 			nav: false,
+			autoplay: true,
+			autoplaySpeed: 3500,
 			responsive:{
 				0:{
 					items:2
@@ -177,28 +204,30 @@
 					items:3
 				},
 				767:{
-					items:4
+					items:3
 				},
 				992:{
-					items:5
+					items:3
 				},
 				1200:{
-					items:6
+					items:3
 				}
 			}
 		});
-
-		$("#guestbook-home .owl-carousel").owlCarousel({
-			animateIn: 'flipInX',
-			animateOut: 'fadeOutDown',
-			items: 1,
-			loop: true,
-			dots: false,
-			autoplay: true,
-			autoplaySpeed: 1500,
-			nav: false
-		});
-
+    
+        function initGuestbookCarousel(){
+        
+            $("#guestbook-home .owl-carousel").owlCarousel({
+                animateIn: 'flipInX',
+                animateOut: 'fadeOutDown',
+                items: 1,
+                loop: true,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                nav: false
+            });
+        }
 		// ====================================================================
 
 		// Direction Aware Hover Effect

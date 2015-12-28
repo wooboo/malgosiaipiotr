@@ -1,0 +1,32 @@
+---
+order: 8
+isPublished: true
+---
+		<!-- ============ REGISTRY START ============ -->
+
+		<section id="registry">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-sm-12" data-sr="enter top">
+						<h5>Jeśli chcesz spełnić nasze przyziemne marzenia</h5>
+						<h1>Oto kilka pomysłów na prezent</h1>
+						<div class="owl-carousel">
+                            <% for page in @getCollection("gifts").toJSON(): %>
+    							<div class="item">
+                                    <% if page.link: %> 
+                                        <a href="<%=page.link%>" target="_blank">
+                                            <img src="<%=page.image%>" alt="<%=page.title%>" />
+                                        </a> 
+                                    <% else: %>
+                                        <img src="<%=page.image%>" alt="<%=page.title%>" />
+                                    <% end %>
+                                    <p><%=page.details%></p>
+                                </div>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ REGISTRY END ============ -->

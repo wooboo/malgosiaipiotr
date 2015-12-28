@@ -7,8 +7,8 @@ isPublished: true
 		<section id="blog">
 			<div class="row text-center">
 				<div class="col-sm-12" data-sr="enter top">
-					<h5>Ostatnie wpisy na</h5>
-					<h1>Naszym Blogu</h1>
+					<h5>Ostatnie wpisy</h5>
+					<h1>Na Naszym Blogu</h1>
 				</div>
 			</div>
 			<div class="row">

@@ -29,6 +29,9 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.serialize-object.min.js"></script>
+    <script src="js/mustache.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 
 	<!-- Bootstrap Plugins -->
 	<script src="js/bootstrap.min.js"></script>

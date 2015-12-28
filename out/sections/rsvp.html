@@ -8,30 +8,30 @@
 						<h1>Are you attending?</h1>
 					</div>
 				</div>
-				<form role="form" name="rsvp-form" id="rsvp-form" action="http://www.coffeecreamthemes.com/themes/bigdate/site/process-rsvp.php">
+				<form role="form" name="rsvp-form" id="rsvp-form"> 
 					<div class="row">
 						<div class="col-sm-3" data-sr="enter left">
 							<div class="form-group" id="rsvp-guests-group">
 								<label for="rsvp-guests">No. of guests</label>
-								<input type="text" class="form-control" id="rsvp-guests" placeholder="1">
+								<input type="text" class="form-control" name="guests" id="rsvp-guests" placeholder="1">
 							</div>
 						</div>
 						<div class="col-sm-3" data-sr="enter left">
 							<div class="form-group" id="rsvp-name-group">
 								<label for="rsvp-name">Name</label>
-								<input type="text" class="form-control" id="rsvp-name" placeholder="John Doe">
+								<input type="text" class="form-control" name="name" id="rsvp-name" placeholder="John Doe">
 							</div>
 						</div>
 						<div class="col-sm-3" data-sr="enter right">
 							<div class="form-group" id="rsvp-email-group">
 								<label for="rsvp-email">Email</label>
-								<input type="email" class="form-control" id="rsvp-email" placeholder="john.doe@email.com">
+								<input type="email" class="form-control" name="email" id="rsvp-email" placeholder="john.doe@email.com">
 							</div>
 						</div>
 						<div class="col-sm-3" data-sr="enter right">
 							<div class="form-group" id="rsvp-phone-group">
 								<label for="rsvp-phone">Phone</label>
-								<input type="text" class="form-control" id="rsvp-phone" placeholder="+1 2654 9375254">
+								<input type="text" class="form-control" name="phone" id="rsvp-phone" placeholder="+1 2654 9375254">
 							</div>
 						</div>
 					</div>
@@ -39,7 +39,7 @@
 						<div class="col-sm-12" data-sr="enter bottom">
 							<div class="form-group" id="rsvp-comments-group">
 								<label for="rsvp-comments">Comments</label>
-								<textarea class="form-control" rows="3" id="rsvp-comments"></textarea>
+								<textarea class="form-control" rows="3" name="comment" id="rsvp-comments"></textarea>
 							</div>
 							<button type="submit" class="btn btn-default">Submit</button>
 						</div>

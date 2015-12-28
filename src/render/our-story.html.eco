@@ -1,0 +1,170 @@
+---
+title: "Nasza historia"
+layout: "home"
+isPage: true
+---
+		<!-- ============ INTRO START ============ -->
+
+		<section id="intro" class="parallax text-center">
+			<div class="tint"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h4>Almost Casablanca</h4>
+						<h1>Our Love Story</h1>
+					</div>
+				</div> 
+			</div>
+		</section>
+
+		<section class="pink text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>&nbsp;</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum, sem vitae sollicitudin scelerisque, tortor urna luctus metus, et condimentum lectus velit rhoncus turpis. Duis posuere auctor erat nec lobortis. Morbi cursus efficitur felis quis placerat. Duis pellentesque fermentum ex sed auctor. In id enim imperdiet, mollis ante a, fringilla ligula. Pellentesque vel ipsum et nulla scelerisque eleifend nec id dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra orci sed ex ultrices, et euismod dui fringilla. Nunc in augue fringilla, efficitur lorem non, vestibulum nulla.</p>
+						<p><a href="#blog" class="btn btn-default">Keep Reading</a></p>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ INTRO END ============ -->
+
+		<!-- ============ BLOG START ============ -->
+
+		<section id="blog">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="padding">
+						<div class="owl-carousel">
+
+							<div>
+								<div class="img-hover">
+									<a href="article.html">
+										<div class="img">
+											<img src="http://placehold.it/960x640" class="img-responsive" alt="" />
+										</div>
+										<div class="info">
+											<i class="fa fa-venus-mars fa-3x"></i>
+										</div>
+									</a>
+								</div>
+								<h5>How we've met</h5>
+								<h6>24 Apr 2015 by Jane Simmons</h6>
+								<p>Duis posuere auctor erat nec lobortis. Morbi cursus efficitur felis quis placerat. Duis pellentesque fermentum ex sed auctor. In id enim imperdiet, mollis ante a, fringilla ligula. Pellentesque vel ipsum et nulla scelerisque eleifend nec id dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p><a href="article.html" class="btn btn-default btn-sm">Read more</a></p>
+							</div>
+						
+							<div>
+								<div class="img-hover">
+									<a href="article.html">
+										<div class="img">
+											<img src="http://placehold.it/960x640" class="img-responsive" alt="" />
+										</div>
+										<div class="info">
+											<i class="fa fa-venus-mars fa-3x"></i>
+										</div>
+									</a>
+								</div>
+
+								<h5>First proper date</h5>
+								<h6>24 Apr 2015 by Jane Simmons</h6>
+								<p>Duis posuere auctor erat nec lobortis. Morbi cursus efficitur felis quis placerat. Duis pellentesque fermentum ex sed auctor. In id enim imperdiet, mollis ante a, fringilla ligula. Pellentesque vel ipsum et nulla scelerisque eleifend nec id dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p><a href="article.html" class="btn btn-default btn-sm">Read more</a></p>
+							</div>
+						
+							<div>
+								<div class="img-hover">
+									<a href="article.html">
+										<div class="img">
+											<img src="http://placehold.it/960x640" class="img-responsive" alt="" />
+										</div>
+										<div class="info">
+											<i class="fa fa-venus-mars fa-3x"></i>
+										</div>
+									</a>
+								</div>
+
+								<h5>He proposed</h5>
+								<h6>24 Apr 2015 by Jane Simmons</h6>
+								<p>Duis posuere auctor erat nec lobortis. Morbi cursus efficitur felis quis placerat. Duis pellentesque fermentum ex sed auctor. In id enim imperdiet, mollis ante a, fringilla ligula. Pellentesque vel ipsum et nulla scelerisque eleifend nec id dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p><a href="article.html" class="btn btn-default btn-sm">Read more</a></p>
+							</div>
+						
+							<div>
+								<div class="img-hover">
+									<a href="article.html">
+										<div class="img">
+											<img src="http://placehold.it/960x640" class="img-responsive" alt="" />
+										</div>
+										<div class="info">
+											<i class="fa fa-venus-mars fa-3x"></i>
+										</div>
+									</a>
+								</div>
+
+								<h5>Long Engagement</h5>
+								<h6>24 Apr 2015 by Jane Simmons</h6>
+								<p>Duis posuere auctor erat nec lobortis. Morbi cursus efficitur felis quis placerat. Duis pellentesque fermentum ex sed auctor. In id enim imperdiet, mollis ante a, fringilla ligula. Pellentesque vel ipsum et nulla scelerisque eleifend nec id dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p><a href="article.html" class="btn btn-default btn-sm">Read more</a></p>
+							</div>
+						
+							<div>
+								<div class="img-hover">
+									<a href="article.html">
+										<div class="img">
+											<img src="http://placehold.it/960x640" class="img-responsive" alt="" />
+										</div>
+										<div class="info">
+											<i class="fa fa-venus-mars fa-3x"></i>
+										</div>
+									</a>
+								</div>
+
+								<h5>Wedding at last!</h5>
+								<h6>24 Apr 2015 by Jane Simmons</h6>
+								<p>Duis posuere auctor erat nec lobortis. Morbi cursus efficitur felis quis placerat. Duis pellentesque fermentum ex sed auctor. In id enim imperdiet, mollis ante a, fringilla ligula. Pellentesque vel ipsum et nulla scelerisque eleifend nec id dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p><a href="article.html" class="btn btn-default btn-sm">Read more</a></p>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ BLOG END ============ -->
+
+		<!-- ============ YES START ============ -->
+
+		<section id="yes" class="parallax text-center">
+			<div class="tint"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h4 data-sr="enter top">He asked and</h4>
+						<h1 data-sr="enter bottom">She Said Yes!</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ YES END ============ -->
+
+		<!-- ============ FOOTER START ============ -->
+
+		<footer>
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-sm-12">
+						<h5>The Big Date</h5>
+						<p>Responsive HTML Template Designed &amp; Developed by <a href="http://themeforest.net/user/Coffeecream" target="_blank">Coffeecream Themes</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		
