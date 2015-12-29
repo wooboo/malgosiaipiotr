@@ -5,7 +5,7 @@ moment = require('moment')
 moment.locale('pl')
 
 setDates = (model)->
-    model.setMetaDefaults({humanDate:moment(this.date).format('LL'), computerDate:moment(this.date).format('DD-MM-YYYY')})
+    model.setMetaDefaults({humanDate:moment(model.meta.attributes.date).format('LL'), computerDate:moment(model.meta.attributes.date).format('DD-MM-YYYY')})
 # Define the DocPad Configuration
 docpadConfig = {
 	collections:
@@ -23,7 +23,8 @@ docpadConfig = {
             title: "My Website"
  
         getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
-
+        
+        moment: moment
 }
 
 

@@ -1,12 +1,154 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title><%= @getPreparedTitle() %></title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="The Big Date - Wedding HTML Template">
+		<meta name="author" content="Coffeecream Themes, info@coffeecream.eu">
     <%- @getBlock("meta").toHTML() %>
+		<link rel="shortcut icon" href="images/favicon.html">
+
+		<!-- Main Stylesheet -->
+		<link href="../css/style.css" rel="stylesheet">
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="../js/html5shiv.js"></script>
+		<script src="../js/respond.min.js"></script>
+		<![endif]-->
+
     <%- @getBlock("styles").toHTML() %>
 </head>
-<body>
-    <h1><%= @document.title %></h1>
-    <%- @content %>
+	<body id="home" data-spy="scroll" data-target=".menu">
+        <!-- ============ INTRO START ============ -->
+
+		<section id="intro" class="parallax text-center">
+			<div class="tint"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h4><%= @document.humanDate %></h4>
+						<h1><%= @document.title %></h1>
+					</div>
+				</div> 
+			</div>
+		</section>
+
+		<!-- ============ INTRO END ============ -->
+        
+		<!-- ============ BLOG START ============ -->
+
+		<section id="blog">
+			<div class="container">
+				<div class="row">
+
+					<!-- CONTENT START -->
+
+					<div class="col-sm-9">
+
+						<div class="post row">
+							<div class="col-sm-3 col-md-2 text-center">
+								<div class="date-day img-rounded"><%= @moment(@document.date).format('D') %></div>
+								<div class="date-month"><%= @moment(@document.date).format('MMM YYYY') %></div>
+                            </div>
+							<div class="col-sm-9 col-md-10">
+								<div class="img-hover">
+									<a href="article.html">
+										<div class="img">
+											<img src="<%=@document.image %>" class="img-responsive" alt="" />
+										</div>
+										<div class="info">
+											<i class="fa fa-venus-mars fa-3x"></i>
+										</div>
+									</a>
+								</div>
+
+                                <%- @content %>								
+                                <div class="text-right">
+                                    <small><%=@document.humanDate%> - <%=@document.author%></small>
+                                </div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- CONTENT END -->
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ BLOG END ============ -->
+<!-- ============ FOOTER START ============ -->
+
+		<footer>
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-sm-12">
+						<h5>The Big Date</h5>
+						<p>Responsive HTML Template Designed &amp; Developed by <a href="http://themeforest.net/user/Coffeecream" target="_blank">Coffeecream Themes</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ============ FOOTER END ============ -->
+        
+        
+    <!-- Modernizr Plugin -->
+	<script src="../js/modernizr.custom.97074.js"></script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/jquery.serialize-object.min.js"></script>
+    <script src="../js/mustache.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+
+	<!-- Bootstrap Plugins -->
+	<script src="../js/bootstrap.min.js"></script>
+
+	<!-- Retina Plugin -->
+	<script src="../js/retina.min.js"></script>
+
+	<!-- ScrollReveal Plugin -->
+	<script src="../js/scrollReveal.min.js"></script>
+
+	<!-- Flex Menu Plugin -->
+	<script src="../js/jquery.flexmenu.js"></script>
+
+	<!-- Slider Plugin -->
+	<script src="../js/jquery.ui.touch-punch.min.js"></script>
+	<script src="../js/bannerscollection_zoominout.js"></script>
+
+	<!-- Carousel Plugin -->
+	<script src="../js/owl.carousel.min.js"></script>
+
+	<!-- Parallax Plugin -->
+	<script src="../js/parallax.js"></script>
+
+	<!-- Countdown Plugin -->
+	<script src="../js/countdown_plugins.js"></script>
+	<script src="../js/countdown.js"></script>
+
+	<!-- Direction Aware Hover Plugin -->
+	<script src="../js/hoverdir.js"></script>
+
+	<!-- Flickr Plugin -->
+	<script src="../js/jflickrfeed.min.js"></script>
+
+	<!-- Fancybox Plugin -->
+	<script src="../js/fancybox.pack.js"></script>
+
+	<!-- Magic Form Processing -->
+	<script src="../js/magic.js"></script>
+
+	<!-- jQuery Settings -->
+	<script src="../js/settings.js"></script>
+
+
     <%- @getBlock("scripts").toHTML() %>
 </body>
 </html>
