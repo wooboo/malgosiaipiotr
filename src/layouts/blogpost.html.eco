@@ -29,8 +29,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
+                        <img src="../images/<%=@document.author %>.jpg" class="author img-circle" alt="" />
+						<h1><%= @document.title %> <small>by <%=@document.author%></small></h1>
 						<h4><%= @document.humanDate %></h4>
-						<h1><%= @document.title %></h1>
 					</div>
 				</div> 
 			</div>
@@ -64,7 +65,6 @@
 										</div>
 									</a>
 								</div>
-
                                 <%- @content %>								
                                 <div class="text-right">
                                     <small><%=@document.humanDate%> - <%=@document.author%></small>
@@ -75,13 +75,35 @@
 					</div>
 
 					<!-- CONTENT END -->
+					<!-- SIDEBAR START -->
 
+					<div class="col-sm-3" id="sidebar">
+
+						<!-- POSTS START -->
+						<div class="widget">
+							<h5><i class="fa fa-newspaper-o"></i>Latest Posts</h5>
+                            <% for page in @getCollection("blogposts").toJSON(): %>
+								<div class="latest-post">
+                                    <div class="title">
+                                        <img src="../images/<%=page.author %>.jpg" class="author img-circle" alt="" />
+                                        <h5><%=page.title%> <small>by <%=page.author%></small> </h5>
+                                    </div>
+                                    <p><%=page.summary%></p>
+                                    <p><a href="..<%=page.url%>">Więcej <i class="fa fa-angle-right"></i></a></p>
+								</div>
+							<% end %>
+						</div>
+						<!-- POSTS END -->
+
+					</div>
+
+					<!-- SIDEBAR END -->
 				</div>
 			</div>
 		</section>
 
 		<!-- ============ BLOG END ============ -->
-<!-- ============ FOOTER START ============ -->
+        <!-- ============ FOOTER START ============ -->
 
 		<footer>
 			<div class="container text-center">

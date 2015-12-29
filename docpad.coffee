@@ -16,7 +16,7 @@ docpadConfig = {
         gifts: ->
             @getCollection("html").findAllLive({relativeOutDirPath: 'gifts', isPublished: true},[{order:1}])
         blogposts: ->
-            @getCollection("html").findAllLive({relativeOutDirPath: 'posts'},[{date:1}]).on "add", setDates
+            @getCollection("html").findAllLive({relativeOutDirPath: 'posts'},[{date:1, author:2}]).on "add", setDates
     
     templateData:
         site:
