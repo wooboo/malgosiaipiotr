@@ -16,21 +16,23 @@ isPublished: true
 					<div class="padding">
 						<div class="owl-carousel">
 							<% for page in @getCollection("blogposts").toJSON(): %>
-								<div>
-								<div class="img-hover">
-									<a href="<%=page.url%>">
-										<div class="img">
-											<img src="<%=page.image%>" class="img-responsive" alt="" />
-										</div>
-										<div class="info">
-											<i class="fa fa-venus-mars fa-3x"></i>
-										</div>
-									</a>
-								</div>
-								<h5><%=page.title%></h5>
-								<h6><%=page.humanDate%> - <%=page.author%></h6>
-								<p><%=page.summary%></p>
-								<p><a href="<%=page.url%>" class="btn btn-default btn-sm">Więcej</a></p>
+								<div class="post">
+                                    <div class="img-hover"> 
+                                        <a href=".<%=page.url%>">
+                                            <div class="img">
+                                                <img src="<%=page.image%>" class="img-responsive" alt="" />
+                                            </div>
+                                            <div class="info">
+                                                <i class="fa <%=page.icon %> fa-3x"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4 class="pink"><%=page.humanDate%></h4> 
+                                    <div class="title">
+                                        <img src="images/<%=page.author %>.jpg" class="author img-circle" alt="" />
+                                        <h5><%=page.title%> <small>by <%=page.author%></small> </h5>
+                                    </div>
+                                    <p><%=page.summary%></p>
 								</div>
 							<% end %>
 

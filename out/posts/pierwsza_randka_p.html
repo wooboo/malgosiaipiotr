@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%= @getPreparedTitle() %></title>
+	<title>Nasza pierwsza randka | My Website</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="The Big Date - Wedding HTML Template">
 		<meta name="author" content="Coffeecream Themes, info@coffeecream.eu">
-    <%- @getBlock("meta").toHTML() %>
+    <meta name="generator" content="DocPad v6.78.1" />
 		<link rel="shortcut icon" href="images/favicon.html">
 
 		<!-- Main Stylesheet -->
@@ -19,7 +19,11 @@
 		<script src="../js/respond.min.js"></script>
 		<![endif]-->
 
-    <%- @getBlock("styles").toHTML() %>
+    <style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style>
 </head>
 	<body id="home" data-spy="scroll" data-target=".menu">
         <!-- ============ INTRO START ============ -->
@@ -29,8 +33,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<h4><%= @document.humanDate %></h4>
-						<h1><%= @document.title %></h1>
+						<h4>22 marca 2014</h4>
+						<h1>Nasza pierwsza randka</h1>
 					</div>
 				</div> 
 			</div>
@@ -50,24 +54,25 @@
 
 						<div class="post row">
 							<div class="col-sm-3 col-md-2 text-center">
-								<div class="date-day img-rounded"><%= @moment(@document.date).format('D') %></div>
-								<div class="date-month"><%= @moment(@document.date).format('MMM YYYY') %></div>
+								<div class="date-day img-rounded">22</div>
+								<div class="date-month">mar 2014</div>
                             </div>
 							<div class="col-sm-9 col-md-10">
 								<div class="img-hover">
 									<a href="article.html">
 										<div class="img">
-											<img src="../<%=@document.image %>" class="img-responsive" alt="" />
+											<img src="../images/blog_pr_p.jpg" class="img-responsive" alt="" />
 										</div>
 										<div class="info">
-											<i class="fa <%=@document.icon %> fa-3x"></i>
+											<i class="fa fa-mars fa-3x"></i>
 										</div>
 									</a>
 								</div>
 
-                                <%- @content %>								
+                                <h4>Zabrałem ją w niezapomnianą podróź po mieście.</h4>
+<p>Tylko co my właściwie robiliśmy?</p>								
                                 <div class="text-right">
-                                    <small><%=@document.humanDate%> - <%=@document.author%></small>
+                                    <small>22 marca 2014 - Piotr</small>
                                 </div>
 							</div>
 						</div>
@@ -149,6 +154,51 @@
 	<script src="../js/settings.js"></script>
 
 
-    <%- @getBlock("scripts").toHTML() %>
+    <script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
 </body>
 </html>

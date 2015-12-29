@@ -88,6 +88,14 @@ h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
 }
 
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small{
+	text-transform: none;    
+}
+
 h1 {
 	color: #bc2670;
 	font-family: 'Rouge Script', cursive;
@@ -411,9 +419,17 @@ iframe {
 
 	/* 8.1. BLOG POSTS
 	-------------------------------------------------------------------*/
+    #blog .title {
+        margin-top: 3px;
+    }
+    
+	#blog .title h5 {
+		margin-top: 10px;
+        display: inline-block;
+	}
 
-	#blog h5 {
-		margin-top: 2em;
+	#blog .title img {
+        vertical-align: top;
 	}
 
 	#blog h6 {
@@ -423,15 +439,19 @@ iframe {
 	.post {
 	}
 
-		.post h3 {
+		.post h4 {
 			margin: 0;
+            text-align: center;
 		}
 
-			.post small {
-				display: block;
-				margin-bottom: 1em;
-			}
-
+        .post small {
+            display: block;
+        }
+        
+        .post img.author {
+            width: 50px;
+            height: 50px;
+        }
 	.date-day {
 		border: 1px solid #e7e7e7;
 		color: #222;
