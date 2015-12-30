@@ -231,6 +231,7 @@ iframe {
 }
 #couple .flipper img {
   width: 100%;
+  margin-bottom: 105px;
 }
 #couple .flipper .front {
   background: rgba(0, 0, 0, 0.1);
@@ -242,8 +243,8 @@ iframe {
   width: 100%;
 }
 #couple .flipper .front .btn {
-  bottom: 40px;
-  left: 40px;
+  bottom: 20px;
+  left: 20px;
   position: absolute;
 }
 #couple .flipper .back {
@@ -256,8 +257,8 @@ iframe {
   width: 100%;
 }
 #couple .flipper .back .btn {
-  bottom: 40px;
-  left: 40px;
+  bottom: 20px;
+  left: 20px;
   position: absolute;
 }
 #couple .flipper h4 {
@@ -290,6 +291,12 @@ iframe {
 #people h6 {
   margin-bottom: 2em;
 }
+/* 6. DATE 
+-------------------------------------------------------------------*/
+#date h1 {
+  color: #ffffff;
+  font-size: 6em;
+}
 /* 7. EVENTS
 -------------------------------------------------------------------*/
 #events {
@@ -304,6 +311,10 @@ iframe {
 }
 #events .padding {
   padding: 40px;
+}
+#events h1 {
+  color: #ffffff;
+  text-align: center;
 }
 #events h4 {
   color: #ffffff;
@@ -700,6 +711,9 @@ footer p {
 }
 #flowers {
   background-image: url(../images/flowers.jpg);
+}
+#date {
+  background-image: url(../images/stonehenge.jpg);
 }
 #thanks {
   background-image: url(../images/sunset.jpg);
