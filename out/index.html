@@ -213,7 +213,7 @@
                             a Piotr jest ciepły, spontaniczny, szczodry i troszkę leniwy. </p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 flipper" id="bride">
+				<div class="col-lg-3 col-sm-6 flipper right" id="bride">
 					<img src="images/bride.jpg" class="img-responsive" alt="Bride">
 					<div class="front">
 						<button class="btn btn-default">Ona</button>
@@ -228,7 +228,7 @@
 						<p><button class="btn btn-default">Wróć</button></p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 flipper" id="groom">
+				<div class="col-lg-3 col-sm-6 flipper right" id="groom">
 					<img src="images/groom.jpg" class="img-responsive" alt="Groom">
 					<div class="front">
 						<button class="btn btn-default">On</button>
@@ -329,7 +329,7 @@
 		<section id="events" class="text-center">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="flipper">
+					<div class="flipper left">
 						<img src="images/ceremony.jpg" alt="" />
 						<div class="front">
 							<button class="btn btn-default">Pokaż mapę</button>
@@ -395,14 +395,37 @@
 											mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
 										}
 									};
-
+                                    
+                                    var directionsService = new google.maps.DirectionsService;
+                                    var directionsDisplay1 = new google.maps.DirectionsRenderer;
+                                    var directionsDisplay2 = new google.maps.DirectionsRenderer;
+                                    
 									//-----------------------------------------------------------------------
 									// Set up map ID's
 
 									var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
 									var map2 = new google.maps.Map(document.getElementById("map-canvas2"), myOptions2);
-
-									//-----------------------------------------------------------------------
+                                    
+                                    //----------------------------------------------------------------------
+                                    // Set up directions
+                                    
+                                    // directionsDisplay1.setMap(map);
+                                    // directionsDisplay2.setMap(map2);
+									
+                                    // directionsService.route({
+                                    //     origin: latlng,
+                                    //     destination: latlng2,
+                                    //     travelMode: google.maps.TravelMode.DRIVING
+                                    // }, function(response, status) {
+                                    //     if (status === google.maps.DirectionsStatus.OK) {
+                                    //         directionsDisplay1.setDirections(response);
+                                    //         directionsDisplay2.setDirections(response);
+                                    //     } else {
+                                    //         window.alert('Directions request failed due to ' + status);
+                                    //     }
+                                    // });
+                                    
+                                    //-----------------------------------------------------------------------
 									// Associate the styled map with the MapTypeId and set it to display.
 
 									map.mapTypes.set('map_style', styledMap);
@@ -486,7 +509,7 @@
 						<p>Warszawa, ul. Antoniego Kocjana 70</p>
                         <h4>godzina 18:00</h4>
 					</div>
-					<div class="flipper">
+					<div class="flipper right">
 						<img src="images/party.jpg" alt="" />
 						<div class="front">
 							<button class="btn btn-default">Pokaż mapę</button>

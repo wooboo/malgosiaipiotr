@@ -105,14 +105,24 @@
 
 		// Wedding Couple
 
-		$(".flipper .front .btn").click(function(){
+		$(".flipper.right .front .btn").click(function(){
 			$(this).parent().stop().animate({left:'-100%'},300);
 			$(this).parent().parent().find(".back").stop().animate({left:'0'},300);
 		 });
 
-		$(".flipper .back .btn").click(function(){
+		$(".flipper.right .back .btn").click(function(){
 			$(this).parent().parent().stop().animate({left:'100%'},300);
 			$(this).parent().parent().parent().find(".front").stop().animate({left:'0'},300);
+		 });
+
+        $(".flipper.left .front .btn").click(function(){
+			$(this).parent().stop().animate({right:'-100%'},300);
+			$(this).parent().parent().find(".back").stop().animate({right:'0'},300);
+		 });
+
+		$(".flipper.left .back .btn").click(function(){
+			$(this).parent().parent().stop().animate({right:'100%'},300);
+			$(this).parent().parent().parent().find(".front").stop().animate({right:'0'},300);
 		 });
 
 		// ====================================================================

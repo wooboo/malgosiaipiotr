@@ -334,22 +334,18 @@ iframe {
 #events .flipper .front {
   background: rgba(0, 0, 0, 0.3);
   height: 100%;
-  left: 0;
   position: absolute;
   text-align: center;
   top: 0;
   width: 100%;
 }
 #events .flipper .front .btn {
-  left: 50%;
-  margin: -33px 0 0 -109px;
   position: absolute;
   top: 50%;
 }
 #events .flipper .back {
   background: rgba(0, 0, 0, 0.8);
   height: 100%;
-  left: 100%;
   padding: 40px;
   position: absolute;
   top: 0;
@@ -357,18 +353,51 @@ iframe {
 }
 #events .flipper .back iframe {
   height: 100%;
-  left: 0;
   position: absolute;
   top: 0;
   width: 100%;
 }
 #events .flipper .back p {
   bottom: 15px;
-  left: 0;
   margin: 0 10%;
   position: absolute;
   text-align: center;
   width: 80%;
+}
+#events .flipper.left .front {
+  right: 0;
+}
+#events .flipper.left .front .btn {
+  right: 50%;
+  margin: -33px -109px 0 0;
+}
+#events .flipper.left .back {
+  left: initial;
+  right: 100%;
+}
+#events .flipper.left .back iframe {
+  left: initial;
+  right: 0;
+}
+#events .flipper.left .back p {
+  left: initial;
+  right: 0;
+}
+#events .flipper.right .front {
+  left: 0;
+}
+#events .flipper.right .front .btn {
+  left: 50%;
+  margin: -33px 0 0 -109px;
+}
+#events .flipper.right .back {
+  left: 100%;
+}
+#events .flipper.right .back iframe {
+  left: 0;
+}
+#events .flipper.right .back p {
+  left: 0;
 }
 .map-canvas {
   color: #222222;
