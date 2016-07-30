@@ -1,0 +1,41 @@
+<!-- ============ GUESTBOOK START ============ -->
+
+		<section id="guestbook-home" class="parallax text-center">
+			<div class="tint"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h5>All The Best Wishes</h5>
+						<h1>Księga Gości</h1>
+						<div class="owl-carousel" id="guestbook-carousel">
+
+						</div>
+					</div>
+				</div>
+                <form role="form" name="guestbook-form" id="guestbook-form">
+					<div class="row">
+						<div class="col-sm-6" data-sr="enter left">
+							<div class="form-group" id="guestbook-name-group">
+								<label for="guestbook-name">Imię i nazwisko</label>
+								<input type="text" class="form-control" name="name" id="guestbook-name" placeholder="Jan Kowalski">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12" data-sr="enter bottom">
+							<div class="form-group" id="guestbook-comments-group">
+								<label for="guestbook-comments">Ciepłe słowo</label>
+								<textarea class="form-control" rows="3" name="comment" id="guestbook-comments"></textarea>
+							</div>
+							<button type="submit" class="btn btn-default">Wyślij</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+        <script id="guestbook-template" type="x-tmpl-mustache">
+            <div>
+                <blockquote>{{ comment }} <small>{{ name }}</small></blockquote>
+            </div>
+        </script>
+		<!-- ============ GUESTBOOK END ============ -->

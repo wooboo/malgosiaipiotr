@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+font-style: normal;
+}.flaticon-arrow649:before {
+	content: "\e000";
+}
+.flaticon-bell56:before {
+	content: "\e001";
+}
+.flaticon-cake22:before {
+	content: "\e002";
+}
+.flaticon-dress12:before {
+	content: "\e003";
+}
+.flaticon-flower113:before {
+	content: "\e004";
+}
+.flaticon-gift70:before {
+	content: "\e005";
+}
+.flaticon-heart314:before {
+	content: "\e006";
+}
+.flaticon-lover4:before {
+	content: "\e007";
+}
+.flaticon-male243:before {
+	content: "\e008";
+}
+.flaticon-peace10:before {
+	content: "\e009";
+}
+.flaticon-ring26:before {
+	content: "\e00a";
+}
+.flaticon-suit2:before {
+	content: "\e00b";
+}
+.flaticon-wedding10:before {
+	content: "\e00c";
+}
+.flaticon-wedding8:before {
+	content: "\e00d";
+}
+.flaticon-wedding9:before {
+	content: "\e00e";
+}
